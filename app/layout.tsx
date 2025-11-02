@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import { cn } from "@/lib/utils";
 
 
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={cn(
         GeistSans.variable, 
         AnekTelugu.variable, 
+        GeistMono.variable,
         "font-sans h-full bg-background text-background"
         )}>
         {children}
