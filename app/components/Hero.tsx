@@ -10,7 +10,7 @@ const Code = ({className, ...props }: ComponentPropsWithoutRef<"span">) => {
 
 export const Hero = () => {
     return (
-        <Section className="flex max-lg:flex-col items-start gap-4">
+        <Section className="flex max-md:flex-col items-start gap-4">
             <div className="flex-[3] w-full flex flex-col gap-2">
                 <h2 className="font-caption text-5xl text-primary font-bold">Elias Araneda</h2>
                 <h3 className="text-white text-3xl font-caption">Software developer</h3>
@@ -27,7 +27,7 @@ export const Hero = () => {
                     <Code className="inline-flex items-center gap-1"> 
                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/langfr-250px-Flag_of_Chile.svg.png"
                      style={{width: 16, height: "auto"}} 
-                     alt="flag's contry"
+                     alt="Chile flag's contry"
                      />
                     </Code> 
                     </a>
@@ -36,8 +36,8 @@ export const Hero = () => {
             </div>
             <div className="flex-[2] max-md:m-auto ml-auto">
                 <img
-                src="https://media.licdn.com/dms/image/v2/D4E03AQHnbLdP7Ywtjw/profile-displayphoto-shrink_800_800/B4EZXhbElGGwAc-/0/1743243725674?e=1748476800&v=beta&t=HOE8A1NZzOLO6iSkoSfEqVKe7NK020iNHhpZqRdaRto "
-                className="w-full h-auto max-w-xs max-md:w-56"
+                src="https://avatars.githubusercontent.com/u/137905336?s=400&u=49cf8ba84d8b750b0e7a043d25131b206f9d37ac&v=4"
+                className="w-full h-auto max-w-xs max-xs:w-56"
                 style={{ borderRadius: '50%' }}
                 alt="elias's picture"
                 />

@@ -12,7 +12,7 @@ const AnekTelugu = Anek_Telugu({
 });
 
 export const metadata: Metadata = {
-  title: "Elias Araneda . Software Developper",
+  title: "Elias Araneda • Software Developper",
   description: "Always learning about news concepts and creating projects, with Next.js, Tailwind and Typescript.",
 };
 
