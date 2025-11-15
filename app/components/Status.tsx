@@ -27,7 +27,7 @@ export const Status = () => {
             </Card>
             </div>
             <div className="flex-[2] w-full flex flex-col gap-4">
-                <Card className="p-4 flex-1">
+                <Card className="p-4 flex-1 flex flex-col gap-2">
                     <p className="text-lg text-muted-foreground">Work</p>
                     <div className="flex flex-col gap-4">
                     {WORKS.map((work, index) => (
@@ -63,7 +63,7 @@ const ContactCard = (props: {
     description: string;
 }) => {
     return (
-        <Card className="p-3 bg-accent/10 flex items-center gap-4">
+        <Card className="p-3 bg-accent/10 hover:bg-accent/30 transition-colors group flex items-center gap-4">
             <div className="relative">
                 <img src={props.image} alt={props.name} className="w-10 h-10 rounded-full object-contain" />
                 <img 
@@ -78,7 +78,7 @@ const ContactCard = (props: {
                 </div>
                 <p className="text-xs text-muted-foreground">{props.description}</p>
             </div>
-            <ArrowUpRight size={16} />
+            <ArrowUpRight className="group-hover:translate-x-2 mr-4 group-hover:-translate-y-2 transition-transform" size={16} />
         </Card>
     );
 };
