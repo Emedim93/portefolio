@@ -1,3 +1,7 @@
+import { Code } from "./Code";
+import { ReactLogo } from "./icons/ReactLogo";
+import { TailwindLogo } from "./icons/TailwindLogo";
+import { OpenAILogo } from "./icons/OPenAILogo";
 import { Section } from "./Section";
 import { Badge } from "@/components/ui/badge";
 
@@ -8,36 +12,39 @@ export const Skills = () => {
                     <h2 className="pb-2 text-3xl font-semibold tracking-tight first:mt-0">
                     I love working on...
                 </h2>
-            <div> 
-                <div>
-                    <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary lg:h-12 lg:w-12"
+            <div className="flex max-md:flex-col gap-4"> 
+                <div className="flex flex-col gap-2 flex-1">
+                        <ReactLogo size={42} className="animate-spin"
+                        style={{ 
+                            animationDuration: "10s"
+                         }}
+                        />
+                    <h3 className="text-2xl font-semibold tracking-tight"
                     >
-                    <svg className="w-5 h-5 text-primary-foreground lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"
-                    >
-                        </path>
-                    </svg>
+                        React</h3>
+                    <p className="text-sm text-muted-foreground">Mes projets sont principalement développés avec <Code>React</Code>. 
+                    Cependant, j&apos;intègre <Code>Next.js</Code> comme framework pour le backend et le frontend. 
+                    </p>
                 </div>
-                    <h3 className="text-xl font-bold tracking-tight mb-2">
-                        Marketing</h3>
-                    <p className="text-sm text-muted-foreground">Plan it, create it, launch it. Collaborate seamlessly with all  the organization and hit your marketing goals every month with our marketing plan.</p>
-            </div>
-          <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10   rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900"
-              >
-                  
-                <svg className="w-5 h-5 text-primary-600 lg:w-6 lg:h-6 dark:text-primary-300" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"
+                <div className="flex flex-col gap-2 flex-1">
+                        <TailwindLogo size={42}
+                        />
+                    <h3 className="text-2xl font-semibold tracking-tight"
                     >
-                    </path>
-                </svg>
-              </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">Marketing</h3>
-              <p className="text-gray-500 dark:text-gray-400">Plan it, create it, launch it. Collaborate seamlessly with all  the organization and hit your marketing goals every month with our marketing plan.</p>
-          </div>
-        </div>  
+                        Tailwind</h3>
+                    <p className="text-sm text-muted-foreground">Je peux créer <u>des applications</u> <i>rapidement</i> en utilisant <Code>Tailwind CSS</Code>.
+                    </p>
+                </div>
+                <div className="flex flex-col gap-2 flex-1">
+                        <OpenAILogo size={42}
+                        />
+                    <h3 className="text-2xl font-semibold tracking-tight"
+                    >
+                        AI integration</h3>
+                    <p className="text-sm text-muted-foreground">j&apos;utilise OpenAI pour créer des applications parfaites afin d&apos;apporter une expérience optimale aux utilisateurs.
+                    </p>
+                </div>
+            </div>
         </Section>
-    )
+    );
 }

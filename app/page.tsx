@@ -3,6 +3,8 @@ import { Hero } from "./components/Hero";
 import { Skills } from "./components/Skills";
 import { Spacing } from "./components/Spacing";
 import { Status } from "./components/Status";
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
@@ -11,7 +13,7 @@ export default function Home() {
 
       <Spacing size="md" />
 
-      <Hero />
+       <Hero /> 
 
       <Spacing size="md" />
 
@@ -20,6 +22,15 @@ export default function Home() {
       <Spacing size="md" />
 
       <Skills />
+
+      <Spacing size="md" />
+
+      <Contact />
+
+      <Spacing size="md" />
+
+      <Footer />
+
     </main>
   );
 }
